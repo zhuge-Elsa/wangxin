@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>一些学习记录</title>
+	<link rel="icon" type="image/x-icon" href="img/study.ico">
+	<link rel="stylesheet" type="text/css" href="mystyle.css" title="a">
+	<link rel="stylesheet" type="text/css" href="picshow.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="picshow.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/dark.min.css"/>
+	<script src="highlight.min.js"></script>
+	
+</head>
+<body onload="startTime()">
+<script>
+ hljs.initHighlightingOnLoad();
+</script>
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+<script>
+    L2Dwidget.init({
+        "model": {
+　         jsonPath: "https://unpkg.com/live2d-widget-model-hijiki@1.0.5/assets/hijiki.model.json",
+            "scale": 1
+        },
+        "display": {
+            "position": "right",
+            "width": 100, 
+            "height": 150,
+            "hOffset": 0,
+            "vOffset": -20
+        },
+        "mobile": {
+            "show": true,
+            "scale": 0.5
+        },
+        "react": {
+            "opacityDefault": 0.7,
+            "opacityOnHover": 0.2
+        }
+    });
+</script>
+	<ul class="topmenu">
+		<li><a href="#zd">注册/登录</a></li>
+		<li><a href="#news">评论</a></li>
+		<li><a href="#home">主页</a></li>
+	</ul>
+	<ul class="leftmenu">
+	    <li><a href="https://xinselfintro.netlify.app/">个人介绍</a></li>
+		<li><a href="#task1">任务一记录</a></li>
+		<li><a href="#task2a">任务二记录1</a></li>
+		<li><a href="#task2b">任务二记录2</a></li>
+	</ul>
+	<br>
+	
+	<div class="titlea" id="task1">
+	    <div>
+			<h2>任务一记录</h2>
+			<script>
+				var d=new Date(2022,10,1,12,32,56);
+				document.write(d);
+			</script>
+		</div>
+		<div align="right">
+			<button id="button1">隐藏/显示</button>
+		</div>
+	</div>
+	<div class="content" id="here1">
+		<h3>1.了解了HTML、CSS、JavaScript</h3>
+		<p>先使用b站大学搜索入门</p>
+		<img src="img/11.png" title="b站课程" width="208px" height="175px" >
+		<img src="img/12.png" title="b站课程" width="208px" height="175px">
+		<p>通过小甲鱼和pink老师 <strong>认真而优秀</strong> 的讲解大概了解了三者，
+		并且初识网页代码的样子，还有了自己的first try：
+		（夹带私货！我爱的美女们）</p>
+		<img src="img/13.png" title="我的first try" width="410px" height="340px" >
+		<img src="img/14.png" title="我的first try" width="410px" height="340px" >
+		<p>照着教程一点点打来的尝试代码：</p>
+		<img src="img/15.png" title="我的first try代码" width="1372px" height="800px" >
+		<p>不得不说真的很有成就感欸，看到代码变成网页，真的很爽！</p>
+		<h3>2.根据焦糖招新任务一进行深入的学习和实践</h3>
+		<p>①学习</p>
+		<p>在这个阶段学到了很多新的知识，在下面浅浅列举：</p>
+		<ul>
+			<li>a href="" anchor锚，用于链接，不仅可以链接到其他网页，还可链接到网页的不同位置！</li>
+			<img src="img/16.png" title="a的代码" width="810px" height="25px">
+			<li>空格等字符的网页显示：需要使用特定滴“代号”，且要写分号！</li>
+			<img src="img/17.png" title="特殊字符的代号表" width="1000px" height="500px">
+			<pre><code>
+&lta href="#one"&gt&ltp&gt&nbsp;&#160;&nbsp;&#160; 1.Some facts about me! &nbsp;&#160;&nbsp;&#160; &lt/p&gt&lt/a&gt
+&lta href="#two"&gt&ltp&gt&emsp; 2.My interest! &emsp; &lt/p&gt&lt/a&gt
+&lta href="#thr"&gt&ltp&gt&ensp;&#8194; 3.About future.&#8194;&ensp; &lt/p&gt&lt/a&gt&ltbr&gt
+			</code></pre>
+			<p>try1try结果:</p>
+			<img src="img/17b.png" title="尝试结果" width="473px" height="271px">
+			<li>关于img 的一些属性：图片放置位置、光标显示词语等</li>
+			<pre><code>
+&lt img src="img/1.jpg" alt="看不到就算啦！" align="right" title="最爱的kpop女团" width="400px" height="268px" /&gt
+			</code></pre>
+			<img src="img/17c.png" title="尝试结果" width="800px" height="600px">
+			<li>ul li无序/有序列表</li>
+		</ul>
+		<p>②此阶段滴成品自我介绍：</p>
+		<img src="img/18.png" title="网页截图" width="1000px" height="580px">
+		<h3>关于任务一的学习记录部分</h3>
+		<p>感觉直接把记录的markdown复制粘贴上没啥太大的意思，也不好看，所以就决定先学习css并进一步学习html，并在学习中制作排版更加和谐精美的学习记录</p>
+		<h3>css学习实践</h3>
+		<table border="1" >
+			<tr>
+				<th></th>
+				<th>具体学习内容</th>
+				<th>实践</th>
+			</tr>
+			<tr>
+				<td>CSS文本</td>
+				<td>修改文本颜色、修改文本的对齐方式、去除超链接下划线、文字装饰、缩进</td>
+				<td>√</td>
+			</tr>
+			<tr>
+				<td>CSS边框</td>
+				<td>边框颜色、样式、圆角</td>
+				<td>√</td>
+			</tr>
+			<tr>
+				<td>CSS定位</td>
+				<td>固定、相对位置、粘性定位</td>
+				<td>√</td>
+			</tr>
+			<tr>
+				<td>改变光标</td>
+				<td>各种奇奇怪怪的光标显示法！太有意思了简直</td>
+				<td>√</td>
+			</tr>
+			<tr>
+				<td>CSS链接</td>
+				<td>改变链接的背景颜色、点击前时后的颜色、改变链接样式</td>
+				<td>√</td>
+			</tr>
+			<tr>
+				<td>(乱入)</td>
+				<td>看到人家博客右下会动滴小人真滴超心动，于是疯狂搜索找代码</td>
+				<td>√</td>
+			</tr>
+			<tr>
+				<td>CSS布局</td>
+				<td>居中、左右</td>
+				<td>√</td>
+			</tr>
+		</table>
+		<p>so这个阶段滴小成果：</p>
+		<img src="img/19.png" title="网站初成" width="1112px" height="684px">
+		<p>selfintro网站地址：<a href="https://xinselfintro.netlify.app/">点我去网址</a></p>
+        <p>(部署了好几天【枯】老是不显示，我还以为我的操作出了什么问题，在百度上疯狂搜索也没解决，最后看一个b站教程试着改了一下github里面.html的名称为index！居然成功了，真的超开心！！)</p>
+		<p>代码：<a href="https://github.com/zhuge-Elsa/zhuge">点我去看代码</a></p>
+		<p>网页代码：</p>
+		<pre><code>
+&lt!DOCTYPE html&gt
+&lthtml&gt 
+&lthead&gt
+	&ltmeta charset="UTF-8"&gt
+	&lttitle&gt0907班汪鑫的自我简介&lt/title&gt
+	&ltlink rel="icon" type="image/x-icon" href="img/me.ico"&gt
+	&ltstyle type="text/css"&gt
+	 	h1{
+			text-align:center;
+			text-shadow:2px 2px #708090;
+		}
+		h2{
+		    text-indent:64px;
+			font-size:16px;
+			line-height:32px; 
+			&lt!--text-align:center;color: green;--&gt
+		}
+		p {
+		    text-indent:32px;
+			font-size:16px;
+			line-height:16px; 
+		}
+		p.pos_fixed
+		{
+			position:fixed;
+			top:300px;
+			right:5px;
+			color:#8A2BE2
+		}
+		
+		p.thick {font-weight:bold;}
+		a {text-decoration:none;}
+		img{z-index:1;}
+	&lt/style&gt
+	&ltstyle type="text/css"&gt
+		.marked1 {
+			background-color:#90EE90;
+			width: 800px;
+			padding: 5px;
+			margin: 5px;
+			border-radius: 50px 20px;
+			text-align: center;
+		}
+		.marked2 {
+			background-color:#FFB6C1;
+			width: 800px;
+			padding: 5px;
+			margin: 5px;
+			border-radius: 20px 50px;
+		}
+		.marked3 {
+			background-color:#ADD8E6;
+			width: 800px;
+			padding: 5px;
+			margin: 5px;
+			border-radius: 50px 20px;
+		}
+		.head1{
+			color: 	#2E8B57;
+			text-shadow:2px 2px #98FB98;
+		}
+		.head2{
+			color: 		#FF4500;
+			text-shadow:2px 2px #DDA0DD;
+		}
+		.head3{
+			color:  #4169E1;
+			text-shadow:2px 2px #AFEEEE;
+		}
+		div.stick{ 
+			position:-webkit-sticky;
+			position:sticky;
+			top:0;
+			background-color: #F0F8FF;
+			width:600px;
+		}
+	&lt/style&gt
+	&ltstyle&gt
+	    a:link {color:#000000;}
+		a:visited {color:#0000FF;}   
+		a:active {color:#DC143C;} 
+		a.onea:hover {text-decoration:underline;}
+		a.twoa:hover {background-color:pink;}
+		a.foura:hover {font-size:150%;}
+		a.thra:hovor {color:#FF00FF;}
+	&lt/style&gt
+&lt/head&gt
+
+&ltbody&gt
+&ltscript src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"&gt&lt/script&gt
+&ltscript&gt
+    L2Dwidget.init({
+        "model": {
+　         jsonPath: "https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",
+            "scale": 1
+        },
+        "display": {
+            "position": "right", //看板娘的表现位置
+            "width": 75,  //小萝莉的宽度
+            "height": 150, //小萝莉的高度
+            "hOffset": 0,
+            "vOffset": -20
+        },
+        "mobile": {
+            "show": true,
+            "scale": 0.5
+        },
+        "react": {
+            "opacityDefault": 0.7,
+            "opacityOnHover": 0.2
+        }
+    });
+&lt/script&gt
+
+	&lth1&gt个人简介&lt/h1&gt
+	&ltimg src="img/zhengjian.jpg" alt="看不到就算啦！" align="right" style="cursor:progress" title="浅p过的证件照一张" width="100px" height="140px"  /&gt
+	&ltp class="pos_fixed"&gt我叫汪鑫~&lt/p&gt
+	&ltp class="thick"&gt基本信息： &lt/p&gt
+	&ltdiv class="stick"&gt
+		&ltp&gt姓名：汪鑫 &emsp;  年龄：18  &emsp; 性别：女 &emsp;  产地：山东青岛 &emsp; 性格：外向活泼~&lt/p&gt
+	&lt/div&gt
+	&ltp class="thick"&gt浅浅的一个目录:&lt/p&gt
+	&lta href="#one" class="onea"&gt&emsp;&emsp;&emsp; 1.Some facts about me! &emsp;&emsp;&lt/a&gt&ltbr&gt
+	&lta href="#two" class="twoa"&gt&emsp;&emsp;&emsp; 2.My interest! &emsp; &lt/a&gt&ltbr&gt
+	&lta href="#thr" class="thra"&gt&ensp;&#8194;&emsp;&emsp; 3.About future.&#8194;&ensp; &lt/a&gt&ltbr&gt
+	&lta href="#four" class="foura"&gt&ensp;&#8194;&emsp;&emsp; 4.Study record!! &#8194;&ensp; &lt/a&gt&ltbr&gt&ltbr&gt
+
+	&ltdiv class="marked1"&gt
+		&lth2 id="one" class="head1"&gt Some facts about me!&lt/h2&gt
+			&ltp&gt来自山东青岛，美丽的海滨城市~&lt/p&gt
+			&ltp&gtused to be an oier（初二时候搞过信竞，拿了个普及省一）&lt/p&gt
+			&ltp&gtlove coding!（选择本专业正是因此）&lt/p&gt
+			&ltp&gt喜欢创造东西的感觉，特别是自己完成的，会很兴奋，很有成就感&lt/p&gt
+		&ltbr&gt
+	&lt/div&gt&ltbr&gt
+	&lt!--&ltimg src="img/1.jpg" alt="看不到就算啦！" align="right" title="最爱的kpop女团" width="400px" height="268px"  /&gt--&gt
+    &ltdiv class="marked2"&gt
+		&lth2 id="two" class="head2"&gt My interest!&lt/h2&gt
+		&ltul&gt
+			&ltli&gtkpop!!!!（超爱美女！！）&lt/li&gt
+			&ltli&gtmovies & binge-watching（最爱悬疑推理，爱的包括不限于漫威、韩剧、大片好片）&lt/li&gt
+			&ltli&gtsports（喜欢打羽毛球！！） & running &lt/li&gt
+			&ltli&gt无痛追星（颜狗，墙头到处是，塌房我就换人  ：）  ）&lt/li&gt
+		&lt/ul&gt&ltbr&gt
+	&lt/div&gt&ltbr&gt
+	&ltdiv class="marked3"&gt
+		&lth2 id="thr" class="head3"&gt About future&lt/h2&gt
+			&ltp&gt目前的“小”目标当然是能够加入焦糖工作室咯~~&lt/p&gt
+			&ltp&gt希望大一大二能够好好的提升自己的技术，提升自己的绩点，为未来做出准备~&lt/p&gt
+			&ltp&gt冲击保研，努力保外高校/冲击大厂，拿到心仪offer&lt/p&gt
+		&ltbr&gt
+	&lt/div&gt&ltbr&gt
+	
+&lt/body&gt
+
+&lt/html&gt
+		</code></pre>
+	</div>
+	
+	<div class="titlea" id="task2a">
+	    <h2>任务二记录1</h2>
+		<script>
+				var d=new Date(2022,10,5,18,09,54);
+				document.write(d);
+		</script>
+		<div align="right">
+			<button  id="button2">隐藏/显示</button>
+		</div>
+	</div>
+	
+	<div class="content" id="here2">
+		<h3>1.开始我滴任务二网页构建</h3>
+		<p>首先我了解了一下任务二这些实现似乎是离不开Javascript，于是便打开了菜鸟教程的Javascript，哇，第一感觉是惊艳，之前的学习的html和css都只能构建出最基本的网站，但是Javascript就可以使网页质量直线提升。</p>
+		<p>然鹅，在惊叹的探索了一下之后，我枯了，好多代码，好多功能！！感觉无从下手学起，于是实用为主的我决定从我对网站的想法和设计入手，然后针对于我想实现的样式、功能来进行搜索和学习。</p>
+		<p>so第一步就来了：<strong>我想要一个顶部导航栏</strong></p>
+		<p>首先，我滴谷歌浏览器顶部吸引了我</p>
+		<img src="img/20.png" title="标签页" width="1000px" height="45px">
+		<p>哦（二声）有一个csdn！</p>
+		<img src="img/21.png" title="导航栏" width="1000px" height="35px">
+		<p>这极致滴顶栏正和我心意~</p>
+		<p>于是久违的F12魂升起！</p>
+		<img src="img/22.png" title="F12后" width="1000px" height="360px">
+		<p>咱直接就是一个 学习 的大动作<p>
+		<p>学习过程中：</p>
+		<img src="img/23.png" title="css代码" width="700px" height="650px">
+		<p>我真实的见识到了css的力量，哇，真的就是一个哇，一秒劝退的感觉</p>
+		<p>但也有种奇怪的兴奋，本来以为这个css样式我没法看到，但实际上可以！！那就是一个埋头分析，一点点找。</p>
+		<p>本来以为一下就找了，这么多toolbar硬是没有我要的。不过这些里面有其他我想找的，于是就是个研究。</p>
+		<p>emmm,怎么说呢，放弃了这个路径，原因①样式表中的东西实在是太多了，而且有很多我都不知道，导致复制css代码的时候不知道要用那些  ②尝试了太多次都没有成功</p>
+		<p>所以还是一点点学吧【枯】</p>
+		<p>还是得会走才能跑</p>
+		<img src="img/24.png" title="百度到的教程" width="1000px" height="1300px">
+		<p>找到一份详细滴教程，一下子就理解了CSDN代码的一些结构和意思</p>
+		<p>从ul入手往外写，而不是直接从外层盒子开始</p>
+		<p>终于，终于，在菜鸟教程+百度搜索之下，搞定了我心心念念的导航栏和侧边栏（代码有借用，不过每句都学习了一下，了解了具体作用和效果）</p>
+		<img src="img/25.png" title="搞定的网页" width="1000px" height="600px">
+		<p>在一步步转移我的学习记录的过程中我遇到了一个大问题，我的md中引用代码的部分要咋样才能在网站上显示嘞？？</p>
+		<p>随这个问题，我再次打开了百度，开始了highlight.js的学习之旅~~</p>
+		<p>首先先下载了highlight.js，解压，然后根据教程加代码学习，紧接这，我遇到了一个大问题，插入代码部分的<和>都不能直接使用，需要用$lt/$gt进行代表，不是吧，不会要一个个改吧，不知道notepad有没有查找替换嘞？</p>
+		<p>果然，在万能的查找快捷键的ctrl+f的尝试下我避免了一场灾难，而且成功显示了代码！yeah！！！</p>
+	    <img src="img/26.png" title="成功显示的代码" width="760px" height="500px">
+	</div>
+	
+	<div class="titlea" id="task2b">
+	    <h2>任务二记录2</h2>
+		<div align="right">
+			<button  id="button3">隐藏/显示</button>
+		</div>
+	</div>
+	
+	<div class="content" id="here3">
+		<p>一些内容</p>
+	</div>
+	<br>
+	
+	<div id="i1">
+		<div id="i2"></div>
+		<div id="i3">
+			<div class="d1"><img src="img/a1.jpg" class="c1"></div>
+			<div class="d1"><img src="img/a2.jpg" class="c1"></div>
+			<div class="d1"><img src="img/a3.jpg" class="c1"></div>
+			<div class="d1"><img src="img/a4.jpg" class="c1"></div>
+		</div>
+	</div>
+</body>
+<html>
